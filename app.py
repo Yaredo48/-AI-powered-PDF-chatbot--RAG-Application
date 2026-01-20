@@ -3,15 +3,16 @@ from PyPDF2 import PdfReader
 import pandas as pd
 import base64
 import os
+from datetime import datetime
 
-# Update imports for LangChain
+# ✅ Updated LangChain imports
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import FAISS
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain.vectorstores import FAISS
+from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.chat_models import ChatGoogleGenerativeAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
-from datetime import datetime
+# Function to extract text from uploaded PDF files
 
 
 def get_pdf_text(pdf_docs):
