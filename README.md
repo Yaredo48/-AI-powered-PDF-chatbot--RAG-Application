@@ -1,1 +1,8 @@
-# -AI-powered-PDF-chatbot--RAG-Application
+## Create Virtual Environment:
+
+```bash
+python -m venv myenv
+myenv/scripts/activate
+```
+
+## RAG PIPELINE USING HUGGING-FACE TRANSFORMERS:
